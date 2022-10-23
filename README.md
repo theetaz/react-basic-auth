@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Building read world react application with Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project we will be building a react application where user can input and there login details and login to the application - Just like an admin page.
 
-## Available Scripts
+The focus of this project to learn basic real world use cases in practical manner. There for we will be using read backend server with authentication endpoint built using nestjs framework. You can find the repository [HERE](https://github.com/theetaz/simple-auth) for the backend service. Backend service deployed in AWS server you can find the complete postman collection below for the backend auth service.
 
-In the project directory, you can run:
+`BASE_URL=https://ujkp2xeahs.us-east-1.awsapprunner.com`
 
-### `npm start`
+Link to postman collection [Here](https://www.getpostman.com/collections/b43dc97f487af89db05b)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Main Tasks
+  - Build simple login page. In this application we are using ant design library as UI framework top of the react app. you can read their documentation and integrate antd to your current react application. **Important** Only user their UI component for building your react web application. [Ant Design Documentation](https://ant.design])
+- Build login page with email and password as the input fields. Add the basic validations to the input fields.
+  ![Login Page](https://i.postimg.cc/MHnLkQvF/Screenshot-2022-10-23-at-23-49-12.png)
+- We will focus on the registration page and user activation using emails or passcode later.
+- After successfully login user should redirect to the home page with welcome message. In homepage there should be logout button to logout the current user.
+- We need to use redux as state management mechanism for this application.
+- API calls should pass through redux thunk middleware. To Learn more about how the react redux works follow this link. [Redux Tutorials](https://www.youtube.com/watch?v=0awA5Uw6SJE&list=PLC3y8-rFHvwiaOAuTtVXittwybYIorRB3&ab_channel=Codevolution)
+- Each task should should raise the pull request with a proper description about what has developed. You can follow the git flow for this. To learn more about git flow please follow the link [Git flow workflow](https://www.youtube.com/watch?v=gW6dFpTMk8s&ab_channel=NickChapsas)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
